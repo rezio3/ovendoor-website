@@ -15,8 +15,8 @@ const FindUs = () => {
       >
         Gdzie nas znaleźć?
       </Header>
-      <div className="w-100 d-flex gap-5">
-        <div className="w-50">
+      <div className="w-100 d-flex flex-column flex-md-row align-items-center align-items-md-start gap-5">
+        <div className="w-100 w-md-50">
           <a
             href="https://www.google.com/maps/place/Oven+Door+Pizza+Truck/@51.049452,16.8799573,634m/data=!3m1!1e3!4m6!3m5!1s0x470fc1701323cba7:0x15507fdced9402d2!8m2!3d51.0495551!4d16.8797253!16s%2Fg%2F11jr79ppx2?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
             className="image-hover-container"
@@ -26,7 +26,7 @@ const FindUs = () => {
             <div className="hover-overlay"></div>
           </a>
         </div>
-        <div className="d-flex flex-column w-50 gap-2">
+        <div className="d-flex flex-column align-items-center align-items-md-start w-100 w-md-50 gap-2">
           <Header
             as="h4"
             className="text-green mb-0"
@@ -34,7 +34,7 @@ const FindUs = () => {
           >
             Adres:
           </Header>
-          <span style={{ fontSize: 21 }}>
+          <span style={{ fontSize: 21 }} className="text-center text-md-start">
             Przemysłowa 2, <br />
             55-080 Pietrzykowice
           </span>
