@@ -3,4 +3,9 @@
   background-color: rgb(99, 130, 75);
   color: white;
   border-radius: 50px;
+  transition: 0.2s;
+}
+
+.button-custom-green:hover {
+  background-color: rgb(114, 167, 76);
 }

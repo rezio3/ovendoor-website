@@ -22,8 +22,8 @@ const Footer = () => {
         height={`${FOOTER_HEIGHT}px`}
         pizzaSlices={PIZZA_SLICES_FOOTER}
       />
-      <div className="wrapper w-100 h-100 d-flex justify-content-between align-items-center">
-        <div className="footer-nav-wrapper">
+      <div className="wrapper w-100 h-100 d-flex flex-column-reverse flex-md-row flex-reverse justify-content-center justify-content-md-between align-items-center gap-3">
+        <div className="d-flex flex-column flex-md-row align-items-center justify-content-between w-75 gap-1 gap-md-3">
           <NavLink to={routes.start}>
             <button className="footer-nav-button">Start</button>
           </NavLink>

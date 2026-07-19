@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import PizzaImg from "../../media/pizza-image.png";
+import { routes } from "../../utils/routes";
 
 const SubheaderView = () => {
   return (
@@ -24,7 +25,9 @@ const SubheaderView = () => {
           przygotowujemy na świeżo, bo wierzymy, że jakość czuć już od
           pierwszego kęsa.
         </p>
-        <Button>Zamów</Button>
+        <a href={routes.order}>
+          <Button>Zamów</Button>
+        </a>
       </div>
     </div>
   );
