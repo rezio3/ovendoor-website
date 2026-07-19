@@ -36,6 +36,9 @@ body {
 .text-green {
   color: rgb(99, 130, 75);
 }
+.text-white {
+  color: white;
+}
 
 button {
   border: none;
