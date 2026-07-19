@@ -25,7 +25,7 @@ const SubheaderView = () => {
           przygotowujemy na świeżo, bo wierzymy, że jakość czuć już od
           pierwszego kęsa.
         </p>
-        <a href={routes.order}>
+        <a href={routes.order} target="_blank">
           <Button>Zamów</Button>
         </a>
       </div>

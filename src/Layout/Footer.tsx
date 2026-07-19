@@ -30,6 +30,7 @@ const Footer = () => {
           <a
             href={routes.order}
             className="footer-nav-button text-no-wrap text-decoration-none text-white"
+            target="_blank"
           >
             Zamówienia online
           </a>

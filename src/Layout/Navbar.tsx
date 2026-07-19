@@ -13,6 +13,7 @@ const NavBar = () => {
         </NavLink>
         <a
           href={routes.order}
+          target="_blank"
           className="nav-button text-no-wrap text-decoration-none text-reset"
         >
           Zamówienia online

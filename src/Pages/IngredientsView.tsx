@@ -1,5 +1,7 @@
+import IngredientsSlider from "../Views/IngredientsView/IngredientsSlider";
+
 const IngredientsView = () => {
-  return <h1>Składniki</h1>;
+  return <IngredientsSlider />;
 };
 
 export default IngredientsView;
