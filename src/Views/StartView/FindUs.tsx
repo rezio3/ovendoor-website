@@ -4,7 +4,10 @@ import "./ImageHover.scss";
 
 const FindUs = () => {
   return (
-    <div className="d-flex flex-column align-items-center">
+    <div
+      className="d-flex flex-column align-items-center"
+      style={{ marginBottom: 100 }}
+    >
       <Header
         as="h3"
         className="text-uppercase text-green text-center"

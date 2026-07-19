@@ -11,7 +11,12 @@ const NavBar = () => {
         <NavLink to={routes.start}>
           <button className="nav-button">Start</button>
         </NavLink>
-        <button className="nav-button text-no-wrap">Zamówienia online</button>
+        <a
+          href="https://zamowienia.ovendoor.pl/"
+          className="nav-button text-no-wrap text-decoration-none text-reset"
+        >
+          Zamówienia online
+        </a>
         <NavLink to={routes.ingredients}>
           <button className="nav-button text-nowrap">O składnikach</button>
         </NavLink>
