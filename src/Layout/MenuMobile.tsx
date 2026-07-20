@@ -11,9 +11,7 @@ const MenuMobile = ({
   open: boolean;
   switchMenuMobile: () => void;
 }) => {
-  console.log(open);
-  console.log(switchMenuMobile);
-  if (open) {
+  if (!open) {
     return null;
   }
   return (
