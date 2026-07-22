@@ -3,6 +3,7 @@ import OvenDoorImgLogo from "../media/ovendoor-logo.png";
 import "./MenuMobile.scss";
 import { NavLink } from "react-router";
 import { routes } from "../utils/routes";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 const MenuMobile = ({
   open,
@@ -39,7 +40,7 @@ const MenuMobile = ({
       >
         <NavLink to={routes.start}>
           <button onClick={switchMenuMobile} className="navigation-btn-mobile">
-            Start
+            <ChevronRightIcon /> Start
           </button>
         </NavLink>
         <a
@@ -48,16 +49,16 @@ const MenuMobile = ({
           className="navigation-btn-mobile text-decoration-none text-reset"
           onClick={switchMenuMobile}
         >
-          Zamówienia online
+          <ChevronRightIcon /> Zamówienia online
         </a>
         <NavLink to={routes.ingredients}>
           <button onClick={switchMenuMobile} className="navigation-btn-mobile">
-            O składnikach
+            <ChevronRightIcon /> O składnikach
           </button>
         </NavLink>
         <NavLink to={routes.contact}>
           <button onClick={switchMenuMobile} className="navigation-btn-mobile">
-            Kontakt
+            <ChevronRightIcon /> Kontakt
           </button>
         </NavLink>
       </div>
