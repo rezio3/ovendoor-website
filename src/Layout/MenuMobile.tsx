@@ -28,7 +28,7 @@ const MenuMobile = ({
       />
       <button
         className="position-absolute top-0 end-0 p-4 mt-2"
-        style={{ marginRight: 4 }}
+        style={{ marginRight: 18 }}
         onClick={switchMenuMobile}
       >
         <CloseIcon fontSize="large" />

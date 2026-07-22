@@ -5,7 +5,10 @@ import Footer from "./Layout/Footer";
 import StartView from "./Pages/StartView";
 import ContactView from "./Pages/ContactView";
 import Background from "./Layout/Background";
-import { PIZZA_SLICES_TOP_BG } from "./utils/backgroundPizzaSlices";
+import {
+  PIZZA_SLICES_TOP_BG,
+  PIZZA_SLICES_TOP_BG_MOBILE,
+} from "./utils/backgroundPizzaSlices";
 import IngredientsView from "./Pages/IngredientsView";
 import { routes } from "./utils/routes";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -24,7 +27,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Background height="600px" pizzaSlices={PIZZA_SLICES_TOP_BG} />
+      <Background
+        height="600px"
+        pizzaSlices={
+          isMobile ? PIZZA_SLICES_TOP_BG_MOBILE : PIZZA_SLICES_TOP_BG
+        }
+      />
       {isMobile ? (
         <NavBarMobile switchMenuMobile={switchMenuMobile} />
       ) : (

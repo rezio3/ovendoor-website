@@ -26,7 +26,7 @@ const Background: React.FC<BackgroundPropsType> = ({
             left: slice.left,
             width: slice.size,
             height: slice.size,
-            transform: `rotate(${slice.rotate})`,
+            transform: `rotate(${slice.rotate}) ${slice.rotateY ? `rotateY(${slice.rotateY})` : ""}`,
             backgroundImage: `url(/pizza-bg.png)`,
           }}
         />
