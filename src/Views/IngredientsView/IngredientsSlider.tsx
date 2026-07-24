@@ -3,14 +3,23 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import Slide1 from "../../media/flour.jpg";
-import Slide2 from "../../media/tomatos.jfif";
-import Slide3 from "../../media/cheese.jpg";
+import Slide1 from "../../media/ingredientsSlide1.png";
+import Slide2 from "../../media/ingredientsSlide2.png";
+import Slide3 from "../../media/ingredientsSlide3.png";
 
 const SLIDES = [
-  { img: Slide1, txt: "Śnieżny okraszacz pizzy" },
-  { img: Slide2, txt: "Czerwone pomidory prosto z włoskiego krzaka" },
-  { img: Slide3, txt: "Koza płakała jak dawała" },
+  {
+    img: Slide2,
+    txt: "Najwyższej jakości oliwa z oliwek najwyższego chainsu z pierwszego tłoczenia na zimno. Cechuje się głębokim, lekko owocowym aromatem i zrównoważonym smakiem, który idealnie podkreśla chrupkość ciasta oraz wykańcza kompozycję śródziemnomorskich składników.",
+  },
+  {
+    img: Slide3,
+    txt: "Serce i fundament prawdziwego ciasta. Profesjonalna, włoska mąka pszenna Le 5 Stagioni Superiore Typ 00. Działa cuda podczas długiego wyrastania ciasta – to właśnie dzięki niej brzegi naszej pizzy są niesamowicie wyrośnięte, lekkie i chrupiące.",
+  },
+  {
+    img: Slide1,
+    txt: "Całe, obierane pomidory włoskie La Regina to serce naszego sosu do pizzy. Dojrzewające we włoskim słońcu, charakteryzują się wyjątkowo słodkim smakiem, naturalnym aromatem i niską kwasowością. Zero zbędnych dodatków – tylko czysta, włoska natura.",
+  },
 ];
 
 const IngredientsSlider = () => {
@@ -35,9 +44,9 @@ const IngredientsSlider = () => {
       >
         {SLIDES.map((slide) => (
           <SwiperSlide>
-            <div className="p-5 text-center d-flex flex-column flex-md-row align-items-center gap-2 justify-content-center">
+            <div className="p-5 text-center d-flex flex-column align-items-center gap-2 justify-content-center">
               <img src={slide.img} alt="mąka" height={100} />
-              <span>{slide.txt}</span>
+              <span style={{ fontSize: 14 }}>{slide.txt}</span>
             </div>
           </SwiperSlide>
         ))}

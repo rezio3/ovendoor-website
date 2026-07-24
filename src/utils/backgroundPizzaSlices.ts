@@ -8,7 +8,7 @@ export const PIZZA_SLICES_TOP_BG = [
     rotateY: "180deg",
   },
   { top: "-10px", left: "35%", size: "170px", rotate: "-30deg" },
-  { top: "61%", left: "30%", size: "150px", rotate: "-10deg" },
+  { top: "53%", left: "30%", size: "150px", rotate: "-10deg" },
   {
     top: "15%",
     left: "49%",
@@ -32,7 +32,7 @@ export const PIZZA_SLICES_TOP_BG = [
     rotate: "-75deg",
   },
   {
-    top: "67%",
+    top: "57%",
     left: "60%",
     size: "155px",
     rotate: "25deg",

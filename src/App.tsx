@@ -3,7 +3,6 @@ import "./App.css";
 import NavBar from "./Layout/Navbar";
 import Footer from "./Layout/Footer";
 import StartView from "./Pages/StartView";
-import ContactView from "./Pages/ContactView";
 import Background from "./Layout/Background";
 import {
   PIZZA_SLICES_TOP_BG,
@@ -16,6 +15,7 @@ import { useMediaQuery } from "@mui/material";
 import NavBarMobile from "./Layout/NavbarMobile";
 import { useState } from "react";
 import MenuMobile from "./Layout/MenuMobile";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const isMobile = useMediaQuery("(max-width:991.98px)");
@@ -27,6 +27,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Background
         height="600px"
         pizzaSlices={
@@ -42,7 +43,7 @@ function App() {
         <Routes>
           <Route path={routes.start} element={<StartView />} />
           <Route path={routes.ingredients} element={<IngredientsView />} />
-          <Route path={routes.contact} element={<ContactView />} />
+          <Route path={routes.start} element={<StartView />} />
         </Routes>
       </div>
       <Footer />

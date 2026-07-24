@@ -1,10 +1,28 @@
+import { useEffect, useRef } from "react";
 import Header from "../../components/Header";
 import MapImg from "../../media/map.jpg";
 import "./ImageHover.scss";
+import { useLocation } from "react-router";
 
 const FindUs = () => {
+  const contactRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash === "#contact" && contactRef.current) {
+      const timer = setTimeout(() => {
+        contactRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+
+      return () => clearTimeout(timer);
+    }
+  }, [location]);
+
   return (
     <div
+      ref={contactRef}
       className="d-flex flex-column align-items-center"
       style={{ marginBottom: 100 }}
     >
