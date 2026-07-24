@@ -10,7 +10,7 @@ const NavBarMobile = ({
   return (
     <div className="nav-bar-wrapper">
       <img src={OvenDoorImgLogo} alt="ovendoor-logo" width={100} />
-      <button className="p-3" onClick={switchMenuMobile}>
+      <button /* className="p-3" */ onClick={switchMenuMobile}>
         <MenuIcon fontSize="large" />
       </button>
     </div>
